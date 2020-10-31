@@ -1,10 +1,8 @@
 #!/bin/bash
 
-echo "Installing .bashrc, .vimrc"
+echo "Installing Vim config files"
 cp .vimrc ~/
 cp -r .vim ~/
 
-## Install cron jobs
-sudo cp scripts/remap.sh /usr/local/bin/
-## Tell cron to run its jobs
-sudo cp remap_job /etc/cron.d/
+echo "TODO: Install bashrc and i3 configs as well"
+
