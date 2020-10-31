@@ -14,3 +14,10 @@ colorscheme winter
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 set showmatch
+set encoding=utf-8
+" Flag unnecessary trailing whitespace in red
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+" Python indent
+autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 smarttab expandtab
+" NERDTree for browsing files
+map <F2> :NERDTreeToggle<CR>
