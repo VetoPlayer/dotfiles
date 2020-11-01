@@ -13,5 +13,5 @@ sudo apt-get install python3-autopep8 pylint
 
 echo "Linting: Remember pylint has to be installed inside the virtual environment!"
 
-set -e
+set +e
 ## Pylint can automatically generate UML diagrams for you!
