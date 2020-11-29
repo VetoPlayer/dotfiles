@@ -21,3 +21,7 @@ autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 te
 map <F2> :NERDTreeToggle<CR>
 " Tell vim where to find tags: in the current directory under tags
 set tags=./tags,tags;$HOME
+let g:ale_python_pylint_options = '--load-plugins pylint_flask,pylint_flask_sqlalchemy'
+" Colors extra
+hi Pmenu ctermbg=DarkBlue ctermfg=black
+hi PmenuSel ctermbg=LightBlue ctermfg=black
