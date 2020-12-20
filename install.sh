@@ -3,11 +3,11 @@
 set -e
 set -x
 
-
-
 ## Python
-sudo apt-get install python3-pip python3-autopep8 pylint
+sudo apt-get install python3-pip python3-autopep8 pylint python3-venv
 python3 -m pip install --user pipx
+pipx install black
+pipx install isort
 
 ## Vim
 sudo apt-get install vim-nox
