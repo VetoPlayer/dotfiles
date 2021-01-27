@@ -10,6 +10,7 @@ set ts=4
 set sts=4
 set sw=4
 set title
+set mouse=a
 syntax on
 colorscheme winter
 map <F7> :tabp<CR>
