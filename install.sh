@@ -26,12 +26,19 @@ vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
 # Install Tim Pope's essential plugins
 mkdir -p ~/.vim/pack/tpope/start
 cd ~/.vim/pack/tpope/start
+# Install vim essential
+git clone https://tpope.io/vim/sensible.git
 # Install vim unimpared
 git clone https://tpope.io/vim/unimpaired.git
 vim -u NONE -c "helptags unimpaired/doc" -c q
 # Install vim surround
 git clone https://tpope.io/vim/surround.git
 vim -u NONE -c "helptags surround/doc" -c q
+
+## TODO: 
+## https://github.com/Shougo/unite.vim
+## https://github.com/mhinz/vim-signify
+## https://nixos.org/
 
 echo "Remember: you need to install pylint in virtual environments in order to make it see all packages!"
 
