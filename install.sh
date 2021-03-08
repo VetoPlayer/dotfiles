@@ -22,6 +22,8 @@ git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-pl
 # Install NerdTree
 git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+# Install Signify for seeing added lines wrt git
+git clone https://github.com/mhinz/vim-signify ~/.vim/pack/vendor/start/
 
 # Install Tim Pope's essential plugins
 mkdir -p ~/.vim/pack/tpope/start
@@ -37,7 +39,6 @@ vim -u NONE -c "helptags surround/doc" -c q
 
 ## TODO: 
 ## https://github.com/Shougo/unite.vim
-## https://github.com/mhinz/vim-signify
 ## https://nixos.org/
 
 echo "Remember: you need to install pylint in virtual environments in order to make it see all packages!"
