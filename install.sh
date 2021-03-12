@@ -6,6 +6,7 @@ set -x
 ## Python
 sudo apt-get install python3-pip python3-autopep8 pylint python3-venv
 python3 -m pip install --user pipx
+python3 -m pipx ensurepath
 pipx install black
 pipx install isort
 
@@ -23,7 +24,7 @@ git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-pl
 git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
 # Install Signify for seeing added lines wrt git
-git clone https://github.com/mhinz/vim-signify ~/.vim/pack/vendor/start/
+git clone https://github.com/mhinz/vim-signify ~/.vim/pack/vendor/start/vim-signify
 
 # Install Tim Pope's essential plugins
 mkdir -p ~/.vim/pack/tpope/start
